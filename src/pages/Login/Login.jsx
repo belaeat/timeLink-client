@@ -48,23 +48,23 @@ const Login = () => {
   };
 
   return (
-    <div className="hero min-h-screen">
+    <div className="hero h-screen bg-[#d4f9cf]">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+        <div className="card bg-base-100 w-[350px] h-[604px] shrink-0 shadow-2xl">
           <form
             onSubmit={handleLogin}
-            className="card-body rounded-lg bg-[#BBBBFF] border-[#5C48BC] border-2"
+            className="card-body bg-[#BBBBFF] border-2 border-[#8168fe] rounded-md shadow-[0_4px_4px_rgba(0,0,0,0.25),0_3px_6px_rgba(0,0,0,0.22)]"
           >
-            <h1 className="font-bold text-3xl">Login</h1>
+            <h1 className="font-bold text-3xl self-center mb-4">Login</h1>
             <div className="form-control">
               <label className="label">
-                <span className="label-text  text-[#5C48BC]">Email</span>
+                <span className="label-text text-[#5C48BC]">Email</span>
               </label>
               <input
                 type="email"
                 name="email"
                 placeholder="email"
-                className="input input-bordered"
+                className="input border-2 border-[#8168fe] rounded-md shadow-[0_3px_6px_rgba(0,0,0,0.22)]"
                 required
               />
             </div>
@@ -76,23 +76,23 @@ const Login = () => {
                 type="password"
                 name="password"
                 placeholder="password"
-                className="input input-bordered"
+                className="input border-2 border-[#8168fe] rounded-md  shadow-[0_3px_6px_rgba(0,0,0,0.22)]"
                 required
               />
               <label className="label">
                 <a
                   href="#"
-                  className="label-text-alt  text-[#5C48BC] link link-hover"
+                  className="label-text-alt text-[#5C48BC] link link-hover"
                 >
                   Forgot password?
                 </a>
               </label>
             </div>
             <div className="form-control mt-6 flex  items-center">
-              <button className="">Login</button>
-              <button onClick={handleGoogleLogin}>Sign in with Google</button>
+              <button className="w-48">Login</button>
+              <button className="w-48" onClick={handleGoogleLogin}>Sign in with Google</button>
               <Link to="/gameplay">
-                <button>Play as Guest</button>
+                <button className="w-48">Play as Guest</button>
               </Link>
               <p className="text-red-700">{error}</p>
               <p className="text-[#5C48BC]">{success}</p>

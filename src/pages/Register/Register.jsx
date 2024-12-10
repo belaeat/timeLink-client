@@ -23,14 +23,14 @@ const Register = () => {
   };
 
   return (
-    <div className="hero min-h-screen">
+    <div className="hero h-screen bg-[#d4f9cf]">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
           <form
             onSubmit={handleRegister}
-            className="card-body rounded-lg bg-[#BBBBFF] border-[#5C48BC] border-2"
+            className="card-body bg-[#BBBBFF] border-2 border-[#8168fe] rounded-md shadow-[0_4px_4px_rgba(0,0,0,0.25),0_3px_6px_rgba(0,0,0,0.22)]"
           >
-            <h1 className="font-bold text-3xl">Register</h1>
+            <h1 className="font-bold text-3xl self-center mb-4">Register</h1>
             {/* Username */}
             <div className="form-control">
               <label className="label">
@@ -40,7 +40,7 @@ const Register = () => {
                 type="username"
                 name="username"
                 placeholder="username"
-                className="input input-bordered"
+                className="input border-2 border-[#8168fe] rounded-md shadow-[0_3px_6px_rgba(0,0,0,0.22)]"
               />
             </div>
             {/* Email */}
@@ -52,7 +52,7 @@ const Register = () => {
                 type="email"
                 name="email"
                 placeholder="email"
-                className="input input-bordered"
+                className="input border-2 border-[#8168fe] rounded-md shadow-[0_3px_6px_rgba(0,0,0,0.22)]"
               />
             </div>
             {/* Password */}
@@ -64,15 +64,15 @@ const Register = () => {
                 type="password"
                 name="password"
                 placeholder="password"
-                className="input input-bordered"
+                className="input border-2 border-[#8168fe] rounded-md shadow-[0_3px_6px_rgba(0,0,0,0.22)]"
               />
             </div>
-            <div className="form-control mt-6 flex items-center">
-              <button className="">Register</button>
+            <div className="form-control mt-4 flex items-center">
+              <button className="w-48">Register</button>
               <Link to="/gameplay">
-                <button>Play as Guest</button>
+              <button className="w-48">Play as Guest</button>
               </Link>
-              <p className="mb-4">
+              <p className="mt-4 mb-4">
                 Already have an account?{" "}
                 <Link className="font-bold link-hover" to="/login">
                   Login here.

@@ -1,9 +1,9 @@
 const Footer = () => {
   return (
     <div>
-      <p className="text-center p-3">
-        &copy; 2024 timeShifters team (aka Md Belaeat Hossain, Saara Rikama,
-        Stefanie Jana, Vladimir Beliakov)
+      <p className="text-center text-xs p-3 mt-12">
+        &copy; 2024 timeShifters team (a.k.a Md Belaeat Hossain, Vladimir Beliakov,
+        Stefanie Jana & Saara Rikama)
       </p>
     </div>
   );

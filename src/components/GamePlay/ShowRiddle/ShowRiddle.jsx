@@ -1,11 +1,9 @@
-import "./ShowRiddle.css";
-
 function ShowRiddle({ riddle }) {
   return (
-    <div className="show-riddle">
+    <div className="mb-5 p-5 bg-gray-100 border-2 border-[#8168fe] rounded-md text-justify">
       {riddle ? (
-        <p>
-          <strong>Riddle:</strong> {riddle.riddle}
+        <p className="font-bold text-lg">
+          {riddle.riddle}
         </p>
       ) : (
         <p>Loading riddle...</p>

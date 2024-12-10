@@ -3,29 +3,29 @@
 @tailwind utilities;
 
 :root {
-  background-color: #ffffff;
-  color: #f9ff87;
-  /* #D4F9CF lime green */
-  /* #BBBBFF purple-bg */
-  /* #5C48BC purple-text */
-}
-
-body {
-  font-family: "Righteous", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif;
-  color: #5c48bc;
-}
-
-h1 {
-  font-family: "Paytone One", "Gill Sans", "Gill Sans MT", Calibri,
+  background-color: #fefffa;
+  font-family: "Righteous", "Gill Sans", "Gill Sans MT", "Calibri",
     "Trebuchet MS", sans-serif;
-  -webkit-text-fill-color: #f7ff66;
-  -webkit-text-stroke-color: #5c48bc;
-  -webkit-text-stroke-width: 0.2pt;
+  color: #5c48bc;
 }
 
-input,
-button {
-  background-color: #f7ff66;
-  color: #5c48bc;
+.custom-h1 {
+  font-family: "Paytone One", "Gill Sans", "Gill Sans MT", "Calibri",
+    "Trebuchet MS", sans-serif;
+  -webkit-text-stroke-width: 1.5pt;
+  -webkit-text-stroke-color: #5c48bc;
+  -webkit-text-fill-color: inherit;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.22);
+}
+
+.alien {
+  position: absolute;
+  top: 50%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+  width: 35px;
+  height: auto;
+  pointer-events: none;
+  z-index: 30;
+  opacity: 1;
 }

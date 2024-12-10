@@ -1,29 +1,29 @@
 import { Link } from "react-router-dom";
-import Banner from "../../components/Banner/Banner";
+import WelcomeBanner from "../../components/WelcomeBanner/WelcomeBanner";
 
 const Home = () => {
   return (
     <div className="h-screen">
-      <Banner></Banner>
-      <div className="flex gap-10 w-full h-full justify-center items-center">
+      <WelcomeBanner/>
+      <div className="flex w-full h-full justify-center">
         {/* Login */}
-        <div className="">
+        <div className="absolute top-[83%] left-[10.5%] z-30">
           <Link to="/login">
-            <button>Login</button>
+            <button className="h-14 w-56 p-1.5 text-[26px]">Login</button>
           </Link>
         </div>
 
         {/* Register */}
-        <div className="">
+        <div className="absolute top-[83%] left-[29.25%] z-30">
           <Link to="/register">
-            <button>Register</button>
+            <button className="h-14 w-56 p-1.5 text-[26px]">Register</button>
           </Link>
         </div>
 
         {/* Guest */}
-        <div className="">
+        <div className="absolute top-[83%] left-[48%] z-30">
           <Link to="/gameplay">
-            <button>Play as Guest</button>
+            <button className="h-14 w-56 p-1.5 text-[26px]">Play as Guest</button>
           </Link>
         </div>
       </div>

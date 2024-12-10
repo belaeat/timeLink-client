@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "./Modal.css";
 import ShowRiddle from "../ShowRiddle/ShowRiddle";
 
 const Modal = ({ isOpen, onClose, handleCorrectAnswer }) => {
@@ -19,9 +18,9 @@ const Modal = ({ isOpen, onClose, handleCorrectAnswer }) => {
       console.log("Fetched Riddle:", data); // Debugging the response
 
       const incorrectAnswers = [
-        "some answer",
-        "another answer",
-        "one more answer",
+        "Some answer",
+        "Another answer",
+        "One more answer",
       ]; //answers for debugging
       const allAnswers = shuffleArray([data.answer, ...incorrectAnswers]);
 
@@ -53,19 +52,19 @@ const Modal = ({ isOpen, onClose, handleCorrectAnswer }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="modal-overlay">
-      <div className="modal-content">
-        <button className="modal-close" onClick={onClose}>
+    <div className="modal-overlay fixed inset-0 bg-[#0f0831] bg-opacity-50 flex justify-center items-center z-50">
+      <div className="modal-content bg-[#fefffa] p-6 rounded-lg relative w-4/5 max-w-xl max-h-[90%] overflow-auto">
+        <button className="modal-close w-10 rounded-md absolute top-0 right-6" onClick={onClose}>
           X
         </button>
-        <div className="riddle-section">
+        <div className="iddle-section mt-12">
           {riddle ? (
             <>
               <ShowRiddle riddle={riddle} />
-              <div className="answer-buttons">
+              <div className="answer-buttons flex flex-col flex-wrap gap-3 mt-4">
                 {answers.map((answer, index) => (
                   <button
-                    className="answer-button"
+                    className="answer-button flex-1 w-full min-w-[100px] text-lg my-1 px-4 py-2 bg-gray-200 border border-gray-300 rounded-md cursor-pointer text-center whitespace-normal hover:bg-[#BBBBFF] hover:border-[#8168fe]"
                     key={index}
                     onClick={() => handleAnswerSubmit(answer)}
                   >

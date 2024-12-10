@@ -37,7 +37,7 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById("root")).render(
-  <div className="bg-[#D4F9CF]">
+  <div className="bg-[#fefffa]">
     <React.StrictMode>
       <AuthProvider>
         <RouterProvider router={router} />
